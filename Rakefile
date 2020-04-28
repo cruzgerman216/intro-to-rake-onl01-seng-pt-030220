@@ -8,13 +8,10 @@ namespace :greeting do
   end
 end
 
-namespace :Rake do
-
-  desc 'drop into the Pry console'
-task :console => :environment do
+desc 'drop into the Pry console'
+task :console => :environment do 
   Pry.start
-  end
-end
+end 
 
 namespace :db do
 
