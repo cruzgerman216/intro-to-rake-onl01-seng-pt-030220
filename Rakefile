@@ -11,7 +11,7 @@ end
 namespace :Rake do
 
   desc 'drop into the Pry console'
-Task :console => :environment do
+task :console => :environment do
   Pry.start
   end
 end
